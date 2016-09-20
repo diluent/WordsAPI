@@ -40,10 +40,9 @@ function requestOxford(req, res) {
     var word = 'hello';
   var post_options = {
       //host: 'https://od-api-2445581300291.apicast.io',
-    //   host: 'od-api-demo.oxforddictionaries.com',
-        host: 'google.ru',
-    //   port: '443',
-    //   path: '/api/v1/entries/en/' + word +'translations=ru',
+      host: 'od-api-demo.oxforddictionaries.com',
+      port: '443',
+      path: '/api/v1/entries/en/' + word +'translations=ru',
       method: 'GET',
       headers: {
            'Accept': 'application/json',
